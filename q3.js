@@ -24,7 +24,7 @@ arrayList.push(obj4);
 
 console.log(arrayList);
 
-let ans = function groupObjectsBy(jsonObjects,key){
+function groupObjectsBy(jsonObjects,key){
  let mp = new Map();
  for(let i=0;i<jsonObjects.length;i++){
      if(mp.has(jsonObjects[i][key])){
@@ -43,4 +43,4 @@ let ans = function groupObjectsBy(jsonObjects,key){
  return obj;
 }
 
-console.log(ans(arrayList,'channel'));
+console.log(groupObjectsBy(arrayList,'channel'));
